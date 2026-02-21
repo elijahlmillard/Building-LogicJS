@@ -4,7 +4,21 @@
 // Commit 2: "added multiplication logic"
 // Commit 3: "refactored for readability and spacing"
 
+printMultiTable(-2, 5);
+printMultiTable(10, 9);
 
+function printMultiTable(rows, cols) {
+
+
+  for (let row = 1; row <= rows; row++){
+    let currentRow = "";
+
+    for (let col = 1; col <= cols; col++)
+      currentRow += (row * col) + "\t";
+
+    console.log(currentRow);
+  }
+}
 
 // Stretch Goal: Guard clause example
 function printNumber(num) {
