@@ -9,6 +9,7 @@ printMultiTable(10, 9);
 
 function printMultiTable(rows, cols) {
 
+  printNumber(rows, cols);
 
   for (let row = 1; row <= rows; row++){
     let currentRow = "";
@@ -21,7 +22,8 @@ function printMultiTable(rows, cols) {
 }
 
 // Stretch Goal: Guard clause example
-function printNumber(num) {
-  if (num <= 0) return console.log("Please enter a positive number.");
-  console.log("Number:", num);
+// the return stops the function
+function printNumber(num, num2) {
+  if (num <= 0 || num2 <=0) console.log("Please ensure both numbers are positive.");
+  return console.log("Numbers:", num, num2);
 }
