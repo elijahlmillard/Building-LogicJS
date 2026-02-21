@@ -6,5 +6,7 @@
 
 
 for (let i = 1; i < 21; i++) { //for args, (initialization; condition; post-iteration)
-    console.log(i);
+    if(i % 2 == 0){
+      console.log(i);
+    }
 }
