@@ -4,23 +4,23 @@
 // Commit 2: "added fizzbuzz logic"
 // Commit 3: "refactored with clear variable and comments"
 
-for (i = 1; i < 26; i++) {
+for (fizz = 1; fizz < 26; fizz++) {
 
   switch (true){
 
-    case i % 3 && i % 5 === 0:
+    case fizz % 3 && fizz % 5 === 0:
         console.log("FizzBuzz")
       break;
 
-    case i % 3 === 0:
+    case fizz % 3 === 0:
         console.log("fizz");
       break;
 
-    case i % 5 === 0:
+    case fizz % 5 === 0:
         console.log("Buzz");
       break;
 
     default:
-      console.log(i);
+      console.log(fizz);
   }
 }
