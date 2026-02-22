@@ -106,6 +106,9 @@ function findOdd(numbers) {
     // mylog += n;
     count[n] = (count[n] || 0) + 1;
   }
+  for (const [key, value] of Object.entries(count)) {
+  console.log(`${key}: ${value}`); // Output: "a: 5", "b: 7", "c: 9"
+}
   // console.log(mylog);
   console.log(count);
 }
