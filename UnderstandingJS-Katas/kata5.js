@@ -109,7 +109,8 @@ function findOdd(numbers) {
   for (const [key, value] of Object.entries(count)) {
   // console.log(`${key}: ${value}`); // Output: "a: 5", "b: 7", "c: 9"
   if (value % 2 == 1){
-    console.log(`${key} is the odd munber`)
+    // console.log(`${key} is the odd munber`)
+    return Number(key);
   }
 }
   // console.log(mylog);
