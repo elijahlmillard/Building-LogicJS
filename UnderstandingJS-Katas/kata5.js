@@ -88,7 +88,9 @@
 
 function findOdd(numbers) {
   // ✏️  Write your solution here!
-  
+  for (const n of numbers){
+    console.log(n);
+  }
 }
 
 // ══════════════════════════════════════════════════════
