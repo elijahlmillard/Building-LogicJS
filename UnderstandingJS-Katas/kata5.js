@@ -85,23 +85,31 @@
  * YOUR SOLUTION:
  * ══════════════════════════════════════════════════════
  */
+//solution 1
+// function findOdd(numbers) {
+//   // let mylog ="";
+//   const count = {};
+//   for (const n of numbers){
+//     // mylog += n;
+//     count[n] = (count[n] || 0) + 1;
+//   }
+//   for (const [key, value] of Object.entries(count)) {
+//   // console.log(`${key}: ${value}`); // Output: "a: 5", "b: 7", "c: 9"
+//   if (value % 2 == 1){
+//     // console.log(`${key} is the odd munber`)
+//     return Number(key);
+//   }
+// }
+//   // console.log(mylog);
+//   // console.log(count);
+// }
 
-function findOdd(numbers) {
-  // let mylog ="";
-  const count = {};
-  for (const n of numbers){
-    // mylog += n;
-    count[n] = (count[n] || 0) + 1;
-  }
-  for (const [key, value] of Object.entries(count)) {
-  // console.log(`${key}: ${value}`); // Output: "a: 5", "b: 7", "c: 9"
-  if (value % 2 == 1){
-    // console.log(`${key} is the odd munber`)
-    return Number(key);
-  }
-}
-  // console.log(mylog);
-  // console.log(count);
+// solution 2
+
+function findOdd(numbers){
+  return numbers.find(
+    n => numbers.filter(x => x === n).length % 2 !== 0
+  );
 }
 
 // ══════════════════════════════════════════════════════
