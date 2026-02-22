@@ -86,19 +86,6 @@
  * ══════════════════════════════════════════════════════
  */
 
-// const fruits = ['apple', 'banana', 'orange', 'apple', 'apple', 'banana'];
-// const fruitCounts = {};
-
-// for (const fruit of fruits) {
-//   // If the key exists, increment its value; otherwise, initialize it to 1
-//   fruitCounts[fruit] = (fruitCounts[fruit] || 0) + 1;
-// }
-
-// console.log(fruitCounts);
-// Output: { apple: 3, banana: 2, orange: 1 }
-
-// findOdd([1,1,1,2,2])
-
 function findOdd(numbers) {
   // let mylog ="";
   const count = {};
