@@ -105,11 +105,16 @@
 // }
 
 // solution 2
+// function findOdd(numbers){
+//   return numbers.find(
+//     n => numbers.filter(x => x === n).length % 2 !== 0
+//   );
+// }
+
+// solution 3
 
 function findOdd(numbers){
-  return numbers.find(
-    n => numbers.filter(x => x === n).length % 2 !== 0
-  );
+  return numbers.reduce((acc, curr) => acc ^= curr);
 }
 
 // ══════════════════════════════════════════════════════
