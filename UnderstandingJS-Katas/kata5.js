@@ -86,36 +86,40 @@
  * ══════════════════════════════════════════════════════
  */
 
+findOdd([1,1,1,2,2])
+
 function findOdd(numbers) {
   // ✏️  Write your solution here!
+  let mylog ="";
   for (const n of numbers){
-    console.log(n);
+    mylog += n;
   }
+  console.log(mylog);
 }
 
 // ══════════════════════════════════════════════════════
 // TEST SUITE  (run with Node: node kata.js)
 // ══════════════════════════════════════════════════════
 
-const tests = [
-  { input: [1, 1, 2, 2, 3],                    expected: 3,  label: "Basic case"             },
-  { input: [7],                                 expected: 7,  label: "Single element"         },
-  { input: [5, 4, 3, 2, 1, 5, 4, 3, 2],        expected: 1,  label: "Odd one at the start"   },
-  { input: [10, 10, 20, 20, 30, 30, 99],        expected: 99, label: "Odd one at the end"     },
-  { input: [0, 1, 0],                           expected: 1,  label: "Contains zero"          },
-  { input: [-3, -3, -1],                        expected: -1, label: "Negative numbers"       },
-  { input: [1, 2, 3, 1, 2, 3, 4, 4, 5, 5, 6],  expected: 6,  label: "Longer array"           },
-  { input: [42, 42, 42],                        expected: 42, label: "Appears 3 times (odd!)" },
-];
+// const tests = [
+//   { input: [1, 1, 2, 2, 3],                    expected: 3,  label: "Basic case"             },
+//   { input: [7],                                 expected: 7,  label: "Single element"         },
+//   { input: [5, 4, 3, 2, 1, 5, 4, 3, 2],        expected: 1,  label: "Odd one at the start"   },
+//   { input: [10, 10, 20, 20, 30, 30, 99],        expected: 99, label: "Odd one at the end"     },
+//   { input: [0, 1, 0],                           expected: 1,  label: "Contains zero"          },
+//   { input: [-3, -3, -1],                        expected: -1, label: "Negative numbers"       },
+//   { input: [1, 2, 3, 1, 2, 3, 4, 4, 5, 5, 6],  expected: 6,  label: "Longer array"           },
+//   { input: [42, 42, 42],                        expected: 42, label: "Appears 3 times (odd!)" },
+// ];
 
-let passed = 0;
-for (const { input, expected, label } of tests) {
-  const result = findOdd([...input]);
-  const ok = result === expected;
-  console.log(`${ok ? "✅" : "❌"} ${label}: findOdd([${input}]) → ${result} (expected ${expected})`);
-  if (ok) passed++;
-}
-console.log(`\n${passed}/${tests.length} tests passed.`);
+// let passed = 0;
+// for (const { input, expected, label } of tests) {
+//   const result = findOdd([...input]);
+//   const ok = result === expected;
+//   console.log(`${ok ? "✅" : "❌"} ${label}: findOdd([${input}]) → ${result} (expected ${expected})`);
+//   if (ok) passed++;
+// }
+// console.log(`\n${passed}/${tests.length} tests passed.`);
 
 // ══════════════════════════════════════════════════════
 // REFERENCE SOLUTIONS  (no peeking until you've tried! 👀)
