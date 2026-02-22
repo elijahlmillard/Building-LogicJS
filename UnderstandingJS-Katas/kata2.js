@@ -4,14 +4,23 @@
 // Commit 2: "added fizzbuzz logic"
 // Commit 3: "refactored with clear variable and comments"
 
-for (let i = 1; i <= 20; i++) {
-  if (i % 3 === 0 && i % 5 === 0) {
-    console.log("FizzBuzz");
-  } else if (i % 3 === 0) {
-    console.log("Fizz");
-  } else if (i % 5 === 0) {
-    console.log("Buzz");
-  } else {
-    console.log(i);
+for (fizz = 1; fizz < 26; fizz++) {
+
+  switch (true){
+
+    case fizz % 3 && fizz % 5 === 0:
+        console.log("FizzBuzz")
+      break;
+
+    case fizz % 3 === 0:
+        console.log("fizz");
+      break;
+
+    case fizz % 5 === 0:
+        console.log("Buzz");
+      break;
+
+    default:
+      console.log(fizz);
   }
 }

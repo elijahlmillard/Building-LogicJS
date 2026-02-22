@@ -4,16 +4,26 @@
 // Commit 2: "added multiplication logic"
 // Commit 3: "refactored for readability and spacing"
 
-for (let i = 1; i <= 5; i++) {
-  let row = "";
-  for (let j = 1; j <= 5; j++) {
-    row += (i * j) + "\t";
+printMultiTable(-2, 5);
+printMultiTable(10, 9);
+
+function printMultiTable(rows, cols) {
+
+  printNumber(rows, cols);
+
+  for (let row = 1; row <= rows; row++){
+    let currentRow = "";
+
+    for (let col = 1; col <= cols; col++)
+      currentRow += (row * col) + "\t";
+
+    console.log(currentRow);
   }
-  console.log(row);
 }
 
 // Stretch Goal: Guard clause example
-function printNumber(num) {
-  if (num <= 0) return console.log("Please enter a positive number.");
-  console.log("Number:", num);
+// the return stops the function
+function printNumber(num, num2) {
+  if (num <= 0 || num2 <=0) console.log("Please ensure both numbers are positive.");
+  return console.log("Numbers:", num, num2);
 }

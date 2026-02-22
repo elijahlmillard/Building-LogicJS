@@ -5,8 +5,10 @@
 // Commit 3: "refactored variable names for clarity"
 
 
-for (let i = 1; i <= 20; i++) {
-  if (i % 2 === 0) {
-    console.log(i);
-  }
+for (let number = 1; number < 21; number = number + 1) { //for args, (initialization; condition; post-iteration)
+    // check if number is even
+    if(number % 2 == 0){
+      // log the number
+      console.log(number);
+    }
 }
