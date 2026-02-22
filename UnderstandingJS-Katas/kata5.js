@@ -86,27 +86,29 @@
  * ══════════════════════════════════════════════════════
  */
 
-const fruits = ['apple', 'banana', 'orange', 'apple', 'apple', 'banana'];
-const fruitCounts = {};
+// const fruits = ['apple', 'banana', 'orange', 'apple', 'apple', 'banana'];
+// const fruitCounts = {};
 
-for (const fruit of fruits) {
-  // If the key exists, increment its value; otherwise, initialize it to 1
-  fruitCounts[fruit] = (fruitCounts[fruit] || 0) + 1;
-}
+// for (const fruit of fruits) {
+//   // If the key exists, increment its value; otherwise, initialize it to 1
+//   fruitCounts[fruit] = (fruitCounts[fruit] || 0) + 1;
+// }
 
-console.log(fruitCounts);
+// console.log(fruitCounts);
 // Output: { apple: 3, banana: 2, orange: 1 }
 
-// findOdd([1,1,1,2,2])
+findOdd([1,1,1,2,2])
 
-// function findOdd(numbers) {
-//   // ✏️  Write your solution here!
-//   let mylog ="";
-//   for (const n of numbers){
-//     mylog += n;
-//   }
-//   console.log(mylog);
-// }
+function findOdd(numbers) {
+  // let mylog ="";
+  const count = {};
+  for (const n of numbers){
+    // mylog += n;
+    count[n] = (count[n] || 0) + 1;
+  }
+  // console.log(mylog);
+  console.log(count);
+}
 
 // ══════════════════════════════════════════════════════
 // TEST SUITE  (run with Node: node kata.js)
